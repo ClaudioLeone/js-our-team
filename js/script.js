@@ -2,10 +2,10 @@
 // [X] Creare l’array di oggetti con le informazioni fornite.
 
 // MILESTONE 1:
-// [] Stampare su console le informazioni di nome, ruolo e la stringa della foto
+// [X] Stampare su console le informazioni di nome, ruolo e la stringa della foto
 
 // MILESTONE 2:
-// [] Stampare le stesse informazioni su DOM sottoforma di stringhe
+// [X] Stampare le stesse informazioni su DOM sottoforma di stringhe
 
 // BONUS 1:
 // [] Trasformare la stringa foto in una immagine effettiva
@@ -47,3 +47,17 @@ const teamArray = [
 ]
 
 console.log(teamArray);
+
+const list = document.querySelector(".membersList");
+let listElem = "";
+
+for (let i = 0; i < teamArray.length; i++) {
+    const currMember = teamArray[i];
+    listElem += `
+        <li style="border: 1px solid black">
+            ${currMember.name} &nbsp; ${currMember.role} &nbsp; ${currMember.photo}
+        </li>
+    `;
+}
+
+list.innerHTML += listElem
