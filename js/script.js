@@ -58,7 +58,10 @@ for (let i = 0; i < teamArray.length; i++) {
             <div class="card">
                 <div class="card-body flex flex-dir-col">
                 
-                <h5 class="card-title">${currMember.name}</h5>
+                <h5 class="card-title mb-0">
+                    ${currMember.name}
+                    <hr>
+                </h5>
 
                 <h6 class="card-subtitle mb-3 text-muted"><i>${currMember.role}</i></h6>
 

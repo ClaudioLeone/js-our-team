@@ -5,6 +5,7 @@
 }
 
 body {
+    font-family: 'Cabin', sans-serif;
     max-height: 100vh;
     background-color: #b9d4cd;
 }
@@ -35,8 +36,12 @@ li {
   border: 1px solid black;
 }
 
-
 @media (min-width: 0px){
+    
+    #ms_title-card-body{
+        min-height: unset;
+    }
+
     .card-body{
         min-height: 295.73px;
     }
