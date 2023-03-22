@@ -1,18 +1,43 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-img{
-    max-width: 100%;
+body {
+    max-height: 100vh;
+    background-color: #b9d4cd;
 }
 
-li{
-    list-style-type: none;
+img {
+  max-width: 100%;
 }
 
-.membersList{
-    display: inline-block;
-    border: 1px solid black;
+li {
+  list-style-type: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-dir-col {
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.membersList {
+  display: inline-block;
+  border: 1px solid black;
+}
+
+.team-elem {
+  border: 1px solid black;
+}
+
+
+@media (min-width: 0px){
+    .card-body{
+        min-height: 295.73px;
+    }
 }
